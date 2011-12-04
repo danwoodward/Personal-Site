@@ -1,28 +1,26 @@
 body {
-	background-color:#fff;
-	font-size:14px; 
-	font-family: 'Droid Sans', arial, serif; text-decoration: none; color:#2b2b2b; padding:0; margin:0;
+	/* border-top:45px solid #2B2A27; */
+	background:url(/bg1.gif) #2B2B2B fixed;
+	font-size:16px; 
+	line-height:24px;	
+	font-family: 'Droid Sans', arial, serif; text-decoration: none; color:#2b2b2b; 
+	padding:0;
+	margin:0;
 }
 
-#main {
-	position: relative;
-	visibility: visible;
-	margin-top:80px;
-	width:680px;
-	margin-left:auto;
-	margin-right:auto;
-	line-height:1.5em;
-	}
-	
-.column	{
-	padding-right: 70px;
-	line-height: 28px;
-	color: #232323;
-	float:left;
+#left-border {
+position:absolute;
+top:140px;
+left:0;
+width:100%;
+height:10px;
+background:#E8E7E4;
+border-bottom:1px solid #E0E0DD;
 }
 
 
-a.cta{
+
+a.cta {
 	background:#e6e6e6;
 	display:inline-block;
 	padding:.4em .8em;
@@ -42,11 +40,11 @@ a.cta:hover{
 	}
 
 
-a{color:#1863a1}
-a:visited{color:#751590}
-a:focus{color:#0181eb}
-a:hover{color:#0181eb}
-a:active{color:#01579f}
+a{color:#BA141A;text-decoration:none;}
+a:visited{color:#BA141A;}
+a:focus{color:#FF6A78;}
+a:hover{color:#FF6A78;text-decoration:underline;}
+a:active{color:#FF6A78;}
 a{-moz-transition:color 0.3s;-webkit-transition:color 0.3s;-o-transition:color 0.3s;transition:color 0.3s}
 
 
@@ -56,5 +54,157 @@ h2 {font-size:14px; font-family: 'Droid Sans', arial, serif; text-decoration: no
 	color:#aaa !important;
 }
 
-footer {font-size:12px;color:#CCC;width:100%;float:left;clear:both;margin-top:56px;}
-footer a {color:#CCC;text-decoration:none;}
+footer {font-size:12px;color:#ccc;width:100%;float:left;clear:both;margin-top:50px;border-top:1px dashed #CCC;padding-top:25px;margin-bottom:50px;}
+footer a {color:#ccc;text-decoration:none;}
+
+.clear {clear:both;}
+
+
+
+
+
+#topbar {
+	width:100%;
+	position:absolute;
+	z-index:1000;
+	height:50px;
+}
+
+.topbar-inner {line-height:50px;padding-right:20px;text-align:right;font-size: 12px;}
+
+.topbar-inner span {color:#616161;}
+.topbar-inner a {color:#CCC;padding-left:10px;}
+.topbar-inner a:hover {color:#FF6A78;}
+
+.topbar-inner h1 {display:inline;font-size:16px;color:#FFF;margin-right:20px;}
+
+
+.column-alpha img {width:50%;}
+
+@media all and (max-width: 600px) {
+.column-alpha img {width:96%;}
+}
+
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  background-color: #e6e6e6;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -ms-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+  padding: 5px 14px 6px;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  color: #333;
+  font-size: 13px;
+  line-height: normal;
+  border: 1px solid #ccc;
+  border-bottom-color: #bbb;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -webkit-transition: 0.1s linear all;
+  -moz-transition: 0.1s linear all;
+  -ms-transition: 0.1s linear all;
+  -o-transition: 0.1s linear all;
+  transition: 0.1s linear all;
+}
+.btn:hover {
+  background-position: 0 -15px;
+  color: #333;
+  text-decoration: none;
+}
+.btn:focus {
+  outline: 1px dotted #666;
+}
+.btn.primary {
+  color: #ffffff;
+  background-color: #0064cd;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#049cdb), to(#0064cd));
+  background-image: -moz-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -ms-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #049cdb), color-stop(100%, #0064cd));
+  background-image: -webkit-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -o-linear-gradient(top, #049cdb, #0064cd);
+  background-image: linear-gradient(top, #049cdb, #0064cd);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#049cdb', endColorstr='#0064cd', GradientType=0);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border-color: #0064cd #0064cd #003f81;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+.btn.active, .btn :active {
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.btn.large {
+  font-size: 15px;
+  line-height: normal;
+  padding: 9px 14px 9px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+
+
+
+
+#main {
+	padding-top:50px;
+	position: relative;
+	visibility: visible;
+	margin-top:0px;
+	margin-left: auto;
+	margin-right: auto;	
+	width:100%;
+	}
+	
+.column-alpha {
+		margin-right:auto;
+		margin-left:auto;
+		max-width:650px;
+		width: 90%;
+}	
+	
+	
+	
+	
+#main img {
+	border:8px solid #FFF;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);	
+	}	
+	
+	
+p {margin-bottom:30px;}	
+
+.column	{
+	margin-bottom:20px;
+	padding-right: 15%;
+	line-height: 28px;
+	color: #232323;
+	float:left;
+}
+.column.last {padding-right:0px;}
+.headright {float:right;width:300px;}
+
+
+section {float:left;width:100%;margin-top:50px;border-top:1px dashed #CCC;padding-top:50px;}
+#pinboard_linkroll {margin:0;padding:0;list-style: none;}
+#pinboard_linkroll .pin-title,#pinboard_linkroll .pin-description{display:block;}
+#pinboard_linkroll .pin-description{display:block;color:#CCC;}
+#pinboard_linkroll .pin-tag{text-decoration:none;color:#CCC;font-size:13px;line-height:18px;}
+#pinboard_linkroll .pin-tag:hover{text-decoration:underline}
+#pinboard_linkroll .pin-tag:after{content:","}
+#pinboard_linkroll .pin-tag:last-child:after{content:''}
