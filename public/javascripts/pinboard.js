@@ -39,14 +39,16 @@ function Pinboard_Linkroll() {
     if (!it.d) { return; }
     str += "<p><a class=\"pin-title\" href=\"" + this.cook(it.u) + "\">" + this.cook(it.d) + "</a>";
     if (it.n) {
-      str += "<span class=\"pin-description\">" + this.cook(it.n) + "</span>\n";
+      str += "</p><blockquote class=\"pin-description\">" + this.cook(it.n) + "</blockquote><p>\n";
     }
+/*
     if (it.t.length > 0) {
       for (var i = 0; i < it.t.length; i++) {
         var tag = it.t[i];
         str += " <a class=\"pin-tag\" href=\"http://pinboard.in/u:"+ this.cook(it.a) + "/t:" + this.cook(tag) + "\">" + this.cook(tag).replace(/^\s+|\s+$/g, '') + "</a> ";
       }
     }
+*/
     str += "</p></li>\n";
     return str;
   }

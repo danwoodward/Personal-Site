@@ -1,12 +1,28 @@
 body {
 	/* border-top:45px solid #2B2A27; */
-	background:url(/images/bg1.gif) #2B2B2B fixed;
-	font-size:16px; 
+	background:url(/images/bg2.jpg) #2B2B2B fixed;
+	font-size:21px; 
 	line-height:24px;	
-	font-family: 'Droid Sans', arial, serif; text-decoration: none; color:#2b2b2b; 
+	font-family: 'Sorts Mill Goudy', serif;
+	text-decoration: none; 
+	color:#FFF; 
 	padding:0;
 	margin:0;
 }
+
+
+#bg-overlay {
+	position:fixed;
+	height:100%;
+	width:100%;
+	background:#00A6FF;
+	opacity: 0.75;
+	-moz-opacity: 0.20; /* older Gecko-based browsers */
+	filter:alpha(opacity=20); /* For IE6&7 */
+
+}
+
+
 
 #left-border {
 position:absolute;
@@ -19,6 +35,9 @@ border-bottom:1px solid #E0E0DD;
 }
 
 
+h1 {font-size:28px;line-height:32px;font-weight:normal;}
+h2,h3 {font-size:21px;font-weight:normal;color:#FFF;line-height:21px;}
+h3 {font-size:18px;margin-top:12px;line-height:24px;border-bottom:1px dotted #FFF;}
 
 a.cta {
 	background:#e6e6e6;
@@ -40,15 +59,14 @@ a.cta:hover{
 	}
 
 
-a{color:#BA141A;text-decoration:none;}
-a:visited{color:#BA141A;}
-a:focus{color:#FF6A78;}
+a{color:#FFF;text-decoration:underline;}
+a:visited{color:#FFF;}
+a:focus{color:#FFF;}
 a:hover{color:#FF6A78;text-decoration:underline;}
 a:active{color:#FF6A78;}
 a{-moz-transition:color 0.3s;-webkit-transition:color 0.3s;-o-transition:color 0.3s;transition:color 0.3s}
 
 
-h2 {font-size:14px; font-family: 'Droid Sans', arial, serif; text-decoration: none; color:#2b2b2b; padding:0; margin:0;}
 
 .contact h2, .contact, .contact a {
 	color:#aaa !important;
@@ -62,7 +80,6 @@ footer a {color:#ccc;text-decoration:none;}
 
 
 
-
 #topbar {
 	width:100%;
 	position:absolute;
@@ -70,7 +87,8 @@ footer a {color:#ccc;text-decoration:none;}
 	height:50px;
 }
 
-.topbar-inner {line-height:50px;padding-right:20px;text-align:right;font-size: 12px;}
+.topbar-inner {line-height:16px;padding-right:30px;text-align:center;font-size: 12px;padding-top:15px;}
+.topbar-inner h1 {margin-left:30px;font-size: 12px;line-height:16px;color:#616161 !important;font-weight: normal !important;}
 
 .topbar-inner span {color:#616161;}
 .topbar-inner a {color:#CCC;padding-left:10px;}
@@ -81,9 +99,6 @@ footer a {color:#ccc;text-decoration:none;}
 
 .column-alpha img {width:50%;}
 
-@media all and (max-width: 600px) {
-.column-alpha img {width:95%;}
-}
 
 
 .btn {
@@ -160,22 +175,32 @@ footer a {color:#ccc;text-decoration:none;}
 
 
 #main {
-	padding-top:50px;
+	padding-top:20px;
 	position: relative;
 	visibility: visible;
 	margin-top:0px;
-	margin-left: auto;
-	margin-right: auto;	
+	/* margin-left: auto; */
+	/* margin-right: auto;	 */
 	width:100%;
+	max-width:1500px;
 	}
 	
 .column-alpha {
-		margin-right:auto;
-		margin-left:auto;
-		max-width:650px;
-		width: 90%;
+	/* margin-right:auto; */
+
+	/* max-width:650px; */
+	float:left;
+	width: 49%;
+}	
+
+.column-omega {
+	/* margin-right:auto; */
+	float:left;
+	width: 50%;
 }	
 	
+.column-inner {padding-left:20px;padding-right:20px;}
+
 	
 	
 	
@@ -191,8 +216,9 @@ p {margin-bottom:30px;}
 
 .column	{
 	margin-bottom:20px;
-	padding-right: 15%;
-	line-height: 28px;
+	width:45%;
+	padding-right:4%;
+	line-height:28px;
 	color: #232323;
 	float:left;
 }
@@ -200,11 +226,44 @@ p {margin-bottom:30px;}
 .headright {float:right;width:300px;}
 
 
-section {float:left;width:100%;margin-top:50px;border-top:1px dashed #CCC;padding-top:50px;}
+section {float:left;width:100%;margin-top:50px;border-top:10px solid #FFF;}
 #pinboard_linkroll {margin:0;padding:0;list-style: none;}
-#pinboard_linkroll .pin-title,#pinboard_linkroll .pin-description{display:block;}
-#pinboard_linkroll .pin-description{display:block;color:#CCC;}
+#pinboard_linkroll .pin-item {margin-bottom:40px;}
+
+#pinboard_linkroll .pin-title,#pinboard_linkroll {display:block;}
+
+#pinboard_linkroll blockquote.pin-description{
+padding:0;
+margin:0;
+display:block;
+border-left:5px solid #FFF;
+padding-left:20px;
+font-family: 'Inconsolata', sans-serif;
+}
+
+
 #pinboard_linkroll .pin-tag{text-decoration:none;color:#CCC;font-size:13px;line-height:18px;}
 #pinboard_linkroll .pin-tag:hover{text-decoration:underline}
 #pinboard_linkroll .pin-tag:after{content:","}
 #pinboard_linkroll .pin-tag:last-child:after{content:''}
+
+
+
+
+@media all and (max-width: 600px) {
+
+.column-alpha {
+	float:none;
+	width: 100%;
+}	
+
+.column-omega {
+	float:none;
+	width: 100%;
+}
+
+}
+
+
+
+
