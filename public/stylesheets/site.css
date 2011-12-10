@@ -1,6 +1,5 @@
 body {
 	/* border-top:45px solid #2B2A27; */
-	/* background:url(/images/bg2.jpg) #2B2B2B fixed; */
 	font-size:21px; 
 	line-height:22px;	
 	font-family: Inconsolata, "Helvetica Neue", helvetica, sans-serif;
@@ -10,20 +9,13 @@ body {
 	margin:0;
 }
 
-#bg-image {
-position:absolute;
-top:0;
-height:100%;
-width:100%;
-}
-
 
 #bg-overlay {
 	position:fixed;
 	height:100%;
 	width:100%;
-	background:#000;
-	opacity: 0.50;
+	background:#00BB71;
+	opacity: 0.60;
 	-moz-opacity: 0.20; /* older Gecko-based browsers */
 	filter:alpha(opacity=20); /* For IE6&7 */
 
@@ -197,13 +189,13 @@ footer a {color:#ccc;text-decoration:none;}
 
 	/* max-width:650px; */
 	float:left;
-	width: 49%;
+	width: 69%;
 }	
 
 .column-omega {
 	/* margin-right:auto; */
 	float:left;
-	width: 50%;
+	width: 30%;
 }	
 	
 .column-inner {padding-left:20px;padding-right:20px;}
@@ -254,11 +246,31 @@ font-family: 'Inconsolata', sans-serif;
 #pinboard_linkroll .pin-tag:after{content:","}
 #pinboard_linkroll .pin-tag:last-child:after{content:''}
 
+@media all and (min-width: 600px) {
+
+	
+html {
+        background: url(/images/bg2.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}	
+	
 
 
+
+
+
+
+}
 
 @media all and (max-width: 600px) {
 
+html {
+	background:none;
+	}
+	
 .column-alpha {
 	float:none;
 	width: 100%;
