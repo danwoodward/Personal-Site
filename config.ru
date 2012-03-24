@@ -1,3 +1,11 @@
+gem 'rack-rewrite', '~> 1.2.1'
+require 'rack-rewrite'
+
+use Rack::Rewrite do
+r301 %r{.*}, 'http://danwoodward.com$&',
+  :if => Proc.new { |rack_env| rack_env['SERVER_NAME'] != 'danwoodward.com' }
+end
+
 use Rack::Static, 
   :urls => ["/stylesheets", "/images", "/javascripts", "/blog"],
   :root => "public"
