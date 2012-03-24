@@ -1,4 +1,3 @@
-gem 'rack-rewrite', '~> 1.2.1'
 require 'rack-rewrite'
 
 use Rack::Rewrite do
