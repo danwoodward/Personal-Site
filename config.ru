@@ -1,7 +1,7 @@
 require 'rack-rewrite'
 
 use Rack::Rewrite do
-r301 %r{/projects/(\w+)}, 'http://2008.danwoodward.com/projects/$1'
+r301 %r{/projects/(.*)}, 'http://2008.danwoodward.com/projects/$1'
 r301 %r{.*}, 'http://danwoodward.com$&',
   :if => Proc.new { |rack_env| rack_env['SERVER_NAME'] != 'danwoodward.com' } 
 end
