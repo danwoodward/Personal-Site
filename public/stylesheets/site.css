@@ -295,6 +295,10 @@ color:#747474;
 @media all and (max-width: 600px) {
 
 #background {background:none;}
+
+.column-inner {
+	padding-top:10px;
+}
 	
 .column-alpha {
 	float:none;
