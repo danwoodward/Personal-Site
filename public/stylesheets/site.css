@@ -4,6 +4,10 @@ body {
     padding: 0;
 }
 
+html {
+background:rgb(28, 190, 237);
+}
+
 body {
 	/* border-top:45px solid #2B2A27; */
 	font-size:21px; 
@@ -272,6 +276,9 @@ color:#747474;
 
 #background {
 	background: url(/images/me.jpg) no-repeat center center fixed;
+	opacity: 0.80;
+	-moz-opacity: 0.80; /* older Gecko-based browsers */
+	filter:alpha(opacity=80); /* For IE6&7 */
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
